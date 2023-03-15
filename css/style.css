@@ -8,7 +8,7 @@
     /* height: 100%; */
     /* background-color: black; */
 }
-
+/* ------------------------------------------------------------------------------------ */
 /* Navigation bar */
 .navbar {
     display: flex;
@@ -92,6 +92,30 @@
     display: block;
     background-color: rgb(12, 12, 12);
 }
-/* end of navigation bar */
 
+/* end of navigation bar */
+/* ------------------------------------------------------------------------------------ */
 /* page 1 */
+#image-slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    float: left;
+    object-fit: scale-down;
+    margin: auto;
+}
+
+.img_desc {
+    position: absolute;
+    text-align: center;
+}
+
+.txt {
+    position: absolute;
+    top: 50%;
+}
