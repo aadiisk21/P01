@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,26 @@
     <script src="https://kit.fontawesome.com/35fc2bd635.js" crossorigin="anonymous"></script>
     <title>The Band</title>
 </head>
+
 <body>
     <div class="container" id="id_container">
         <div class="navbar_container">
             <nav class="navbar">
                 <ul class="nav">
-                  <li><a href="#home">HOME</a></li>
-                  <li><a href="#band">BAND</a></li>
-                  <li><a href="#tour">TOUR</a></li>
-                  <li><a href="#contact">CONTACT</a></li>
-                  <li class="dropdown"><a href="#more">MORE
-                    <i class="fa-solid fa-caret-down"></i>
-                  </a>
-                    <!-- adding dropdown -->
-                    <div class="dropdown_content">
-                        <a href="#merchandise">MERCHANDISE</a>
-                        <a href="#extras">EXTRAS</a>
-                        <a href="#media">MEDIA</a>
-                    </ul>
-                    </li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#band">BAND</a></li>
+                    <li><a href="#tour">TOUR</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="dropdown"><a href="#more">MORE
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <!-- adding dropdown -->
+                        <div class="dropdown_content">
+                            <a href="#merchandise">MERCHANDISE</a>
+                            <a href="#extras">EXTRAS</a>
+                            <a href="#media">MEDIA</a>
+                </ul>
+                </li>
                 </ul>
                 <div class="search_btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -35,55 +37,60 @@
             <!-- Nav bar ends here -->
             <!-- page 1 (backgroud image) -->
             <div class="backgroud">
-                <div class="image-slider">
-                    <div class="img_desc">
-                        <img class="slider-image" src="images/NewBG1.jpg" alt="">
-                            <div class="txt"></div>
-                                <h2 class="city_name">CHICAGO</h2>
-                                <p class="para">Thank you, Chicago - A night we won't forget.</p>
-                            </div>
+                <div class="img_desc">
+                    <div class="image-slider">
+                        <img class="slider-image img_1" src="images/NewBG1.jpg" alt="">
+                        <div class="txt">
+                            <h2 class="city_name">CHICAGO</h2>
+                            <p class="para">Thank you, Chicago - A night we won't forget.</p>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="img_desc">
-                        <img class="slider-image" src="images/BG-Image2.jpg" alt="">
-                            <div class="txt"></div>
-                                <h2 class="city_name">NEW YORK</h2>
-                                <p class="para">The atmosphere in New York is lorem ipsum.</p>
-                            </div>
+                <div class="img_desc">
+                    <div class="image-slider">
+                        <img class="slider-image img_2" src="images/BG-Image2.jpg" alt="">
+                        <div class="txt">
+                            <h2 class="city_name">NEW YORK</h2>
+                            <p class="para">The atmosphere in New York is lorem ipsum.</p>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="img_desc">
-                        <img class="slider-image" src="images/BG-Image3.jpg" alt="">
-                            <div class="txt">
-                                <h2 class="city_name">LOS ANGELES</h2>
-                                <p class="para">We had the best time playing at Venice Beach!</p>
-                            </div>
+                <div class="img_desc">
+                    <div class="image-slider">
+                        <img class="slider-image img_3" src="images/BG-Image3.jpg" alt="">
+                        <div class="txt">
+                            <h2 class="city_name">LOS ANGELES</h2>
+                            <p class="para">We had the best time playing at Venice Beach!</p>
+                        </div>
                     </div>
-                </div>                
+                </div>
             </div>
-            <!-- page 1 ends -->
-            <!-- page 2 (about) -->
-
         </div>
     </div>
-<!-- script -->
-<script>
+    <!-- page 1 ends -->
+    <!-- page 2 (about) -->
+
+    <!-- script -->
+    <script>
 //     // auto image change
-//     var slideIndex = 0;
-// showSlides();
+    var slideIndex = 0;
+showSlides();
 
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("slider-image");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}    
-//   slides[slideIndex-1].style.display = "block";  
-//   setTimeout(showSlides, 3000); // Change image every 3 seconds
-// }
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("img_desc");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
 
-</script>
+    </script>
 </body>
+
 </html>
