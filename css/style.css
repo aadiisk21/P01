@@ -221,6 +221,7 @@
 
 .tour_booking {
     text-align: center;
+    margin: 1rem 26rem 1rem 26rem;
     /* /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -234,7 +235,8 @@
 .tickets_status {
     background-color: white;
     color: black;
-    margin: 1rem 30rem 1rem 30rem;
+    margin-top: 0.7rem;
+    /* margin: 1rem 30rem 1rem 30rem; */
 }
 
 .tickets_update {
@@ -269,3 +271,79 @@
     border-radius: 50%;
 }
 
+/* tour card */
+.card_details {
+    display: flex;
+    justify-content: center;
+}
+
+.card_tour {
+    display: flex;
+    flex-flow: column;
+    /* border: 1px solid white; */
+    margin: 2rem 0;
+    width: 30rem;
+    height: auto;
+    box-sizing: inherit;
+    color: black;
+}
+
+.card_tour img {
+    width: 100%;
+    height: auto;
+}
+
+.card_text {
+    text-align: start;
+    background-color: white;
+    margin-top: -0.4rem;
+}
+
+.card_2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.city-name {
+    font-size: large;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+
+.date {
+    color: gray;
+    margin: .8rem 0;
+}
+
+.booking_para {
+    margin: 2rem 0.3rem;
+    font-weight: 200;
+}
+
+.city-name, .date, .booking_para, .booking_btn {
+    margin-left: 1rem;
+}
+
+.booking_btn button {
+    margin-bottom: 1rem;
+    color: white;
+    padding: .6rem .9rem;
+    border-radius: 1px;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    font-weight: bold;
+}
+
+.booking_btn button:hover {
+    background-color: rgb(255, 65, 65);
+    color: black;
+    transition: all 0.3s;
+}
+
+
+.card_tour img:hover {
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+/*---   end of page 3   ---*/
