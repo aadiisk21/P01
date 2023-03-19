@@ -9,7 +9,6 @@
     /* background-color: black; */
 }
 
-
 .container {
     position: relative;
     z-index: 3;
@@ -22,6 +21,9 @@
     background: black;
     padding: 11.5px;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav {
@@ -35,7 +37,7 @@
 }
 
 .nav li {
-    margin: .1rem .5rem .1rem .5rem;
+    margin: 0.1rem 0.5rem 0.1rem 0.5rem;
 }
 
 .nav li a {
@@ -90,118 +92,180 @@
     margin: -1px;
 }
 
-    .dropdown_content a:hover {
-        background-color: lightgray;
-    }
+.dropdown_content a:hover {
+    background-color: lightgray;
+}
 
-    .dropdown:hover .dropdown_content {
-        display: block;
-        background-color: rgb(12, 12, 12);
-    }
+.dropdown:hover .dropdown_content {
+    display: block;
+    background-color: rgb(12, 12, 12);
+}
 
-    /* end of navigation bar */
+/* end of navigation bar */
 
-    /* page 1 */
-    .background {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-    }
+/* page 1 */
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
 
-    .bg_section {
-        box-shadow: 0px 10px 20px 2px black, 0px 3px 6px 1px gray;
-    }
-    
-    .img_desc {
-        position: inherit;
-        text-align: center;
-        color: aliceblue;
-    }
-    
-    .image-slider {
-        height: 100vh;
-        width: 100%;
-        margin: auto;
-        position: relative;
-        overflow: hidden;
-        z-index: -1;
-    }
-    
-    .image-slider img {
-        width: 100%;
-        height: auto;
-        float: left;
-        object-fit: scale-down;
-        margin: auto;
-        text-align: center;
-        /* z-index: -2; */
-        /* margin-left: -515px; */
-    }
+.bg_section {
+    box-shadow: 0px 10px 20px 2px black, 0px 3px 6px 1px gray;
+}
 
+.img_desc {
+    position: inherit;
+    text-align: center;
+    color: aliceblue;
+}
 
-    .txt {
-        color: #ffffff;
-        z-index: 1;
-    }
+.image-slider {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
 
-    .city_name {
-        margin-bottom: 2.5rem;
-        margin-left: 7.5rem;
-    }
+.image-slider img {
+    width: 100%;
+    height: auto;
+    float: left;
+    object-fit: scale-down;
+    margin: auto;
+    text-align: center;
+    /* z-index: -2; */
+    /* margin-left: -515px; */
+}
 
-    .city_name, .para {
-        text-align: center;
-        position: absolute;
-        bottom: 8px;
-        left: 41%;
-        text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-    }
+.txt {
+    color: #ffffff;
+    z-index: 1;
+}
 
-    /* page 2 (about section) */
-    .about {
-        text-align: center;
-        margin: 1rem;
-        margin-bottom: 5rem;
-    }
+.city_name {
+    margin-bottom: 2.5rem;
+    margin-left: 7.5rem;
+}
 
-    .about_txt h1 {
-        font-size: 30px;
-        font-weight: normal;
-        letter-spacing: 4px;
-        font-family: "Segoe UI",Arial,sans-serif;
-        margin: 2.5rem 0rem 0.5rem 0rem;
-        padding: 3rem 0 0.3rem 0;
-    }
+.city_name,
+.para {
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    left: 41%;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
 
-    .about_txt i {
-        color: gray;
-        font-size: 13px;
-    }
+/* page 2 (about section) */
+.about {
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 7rem;
+}
 
-    .about_para p {
-        text-align: justify;
-        margin: .8rem 25rem 3rem 25rem;
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
+.heading h1 {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 2.5rem 0rem 0.5rem 0rem;
+    padding: 3rem 0 0.3rem 0;
+}
 
-    .about_profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.about_txt i {
+    color: gray;
+    font-size: 13px;
+}
 
-    .about_profile h3 {
-        margin: 1rem;
-        color: gray;
-    }
+.about_para p {
+    text-align: justify;
+    margin: 0.8rem 25rem 3rem 25rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
 
-    .about_profile img {
-        margin: 1rem;
-        width: 60%;
-        margin: auto;
-        border-radius: 4px;
-        box-shadow: 4px 4px 7px 3px rgba(48, 48, 48, 0.2);
-    }
-    /* end of about profile */
+.about_profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_profile h3 {
+    margin: 1rem;
+    color: gray;
+}
+
+.about_profile img {
+    margin: 1rem;
+    width: 60%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.about_profile img:hover {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2), 0px 0px 20px 1px gray;
+    transition: all 0.5s;
+}
+
+/* end of about profile */
+
+.tour_date {
+    background-color: black;
+    color: white;
+    box-shadow: 0px -10px 20px 2px black, 0px 3px 6px 1px gray;
+    padding: 0.5rem;
+}
+
+.tour_booking {
+    text-align: center;
+    /* /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.tour_booking i {
+    color: rgb(208, 208, 208);
+    font-size: 14px;
+}
+
+.tickets_status {
+    background-color: white;
+    color: black;
+    margin: 1rem 30rem 1rem 30rem;
+}
+
+.tickets_update {
+    text-align: start;
+}
+
+.tickets_update div {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem;
+    font-weight: normal;
+}
+
+.tickets_update h5 {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 14px;
+    padding: 2px;
+}
+
+.tickets_update span {
+    color: white;
+    margin-left: 4rem;
+    padding: 0.2rem 0.4rem;
+    background-color: #f44336;
+}
+
+.month_3 span {
+    color: white;
+    margin-left: 80%;
+    padding: 0.5rem;
+    background-color: #000000;
+    border-radius: 50%;
+}
 
