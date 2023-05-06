@@ -11,6 +11,12 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- preloader end  -->
+
     <div class="container" id="id_container">
         <div class="navbar_container">
             <nav class="navbar">
@@ -262,13 +268,14 @@
         <!-- end of social media -->
         <!-- copyright -->
         <div class="copyright">
-            <p>ASK &copy; Copyright 2023</p>
+            <p>Copyright &copy; ASK 2023</p>
         </div>
+        <!-- End of copyright -->
     </div>
 
     <!-- script -->
     <script>
-        //     // auto image change
+        // auto image change
         var slideIndex = 0;
         showSlides();
 
@@ -283,6 +290,12 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
+
+        window.addEventListener('load', function () {
+            var preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        });
+
 
     </script>
 </body>
